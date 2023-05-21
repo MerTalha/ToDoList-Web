@@ -21,7 +21,7 @@ function displayTasks(filter) {
     ul.innerHTML = "";
 
     if (gorevListesi.length == 0) {
-        ul.innerHTML = "<p class='p-3 m-0'>Görev listeniz boş.</p>"
+        ul.innerHTML = "<p class='p-3 m-0'>Your task list is empty.</p>"
     } else {
 
         for(let gorev of gorevListesi) {
@@ -72,7 +72,7 @@ for(let span of filters) {
 function newTask(event) {
 
     if(taskInput.value == "") {
-        alert("görev girmelisiniz");
+        alert("You must enter a task");
     } else {
         if(!isEditTask) {
             // ekleme
